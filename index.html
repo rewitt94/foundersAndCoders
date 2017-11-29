@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+
+<link rel = "stylesheet" type = "text/css" href = "style.css" />
+
+<div class="wrapper">
+
+  <div class="box">
+
+    <h1 style="position:relative;left:20px;"> Hello World</h1>
+
+    <p style="position:relative;left:50px"> [ 'Welcome Founders and Coders!' , </p>
+    <p style="position:relative;left:80px">  'I'm Ricky,  </p>
+    <p style="position:relative;left:110px"> 'Please use the <span style="color:#FF06F8"> arrow keys </span> to control your submarine and travel to the right.' ,  </p>
+    <p style="position:relative;left:140px"> 'The prequisites can be found in the bottom right corner.' </p>
+    <p style="position:relative;left:170px"> 'This has been tested on Chrome,...' ] </p>
+    <p style="position:relative;left:200px">  // Let's play two truths and a lie. <span style="color:#FF06F8"> Please use the mouse to click on the lie. </span> </p>
+
+    <button style="position:relative;left:230px" class="TTL" onclick="correctOne()"> I built the Eiffel Tower </button>
+    <button style="position:relative;left:260px" class="TTL" onclick="incorrectOne()"> I am 23 years old </button>
+    <button style="position:relative;left:270px" class="TTL" onclick="incorrectOne()"> I studied Maths at uni</button>
+
+    <div style="visibility:hidden" id="commentsOne">
+      <p style="position:relative;left:300px"> <span id="responseOne"></span> // Ofcourse I didn't build the Eiffel Tower, but I do have it tattoed on my leg. </p>
+      <p style="position:relative;left:330px"> // That was a practice. <span style="color:#FF06F8"> Please navigate </span>  (/swim/sail/cruise/float/what-submarines-do) <span style="color:#FF06F8"> right. </span>  </p>
+    </div>
+
+  </div>
+  <div class="box">
+
+    <h1 style="position:relative;left:20px;color:#FF340B"> CODE RED </h1>
+
+    <p style="position:relative;left:50px">  </br> [ 'We had better hurry up if want to be the first to the treasure.' , </p>
+    <p style="position:relative;left:80px">  </br>  'Hop to it!' , </p>
+    <p style="position:relative;left:110px">  </br>  '<span style="color:#FF06F8">Hold Z</span> for turbo.' ] </p>
+
+  </div>
+  <div class="box">
+
+    <h1 style="position:relative;left:20px;"> Fourty Thousand Leagues Under The HTML </h1>
+
+    <p style="position:relative;left:50px"> // Something smells fishy down here. (And it's not the giant squid.) <span style="color:#FF06F8"> Which is the lie? </span> </p>
+
+    <button style="position:relative;left:80px" class="TTL" onclick="incorrectTwo()"> I have worked in Spain </button>
+    <button style="position:relative;left:110px" class="TTL" onclick="incorrectTwo()"> I have worked in Italy </button>
+    <button style="position:relative;left:140px" class="TTL" onclick="correctTwo()" > I have worked in Estonia </button>
+
+    <div style="visibility:hidden" id="commentsTwo">
+
+      <p style="position:relative;left:170px"> <span id="responseTwo"></span> // I hope that wasn't obvious. I did actually live in Estonia for four years as a kid.   </p>
+      <p style="position:relative;left:200px"> </br> // Ok, then. Which of these subjects did I <span style="color:#FF06F8"> NOT </span> like in school? </p>
+
+      <button style="position:relative;left:230px" class="TTL" onclick="incorrectThree()"> I liked English </button>
+      <button style="position:relative;left:260px" class="TTL" onclick="correctThree()"> I liked French </button>
+      <button style="position:relative;left:290px" class="TTL" onclick="incorrectThree()" > I liked Art </button>
+
+      <div style="visibility:hidden" id="commentsThree">
+        <p style="position:relative;left:320px"> <span id="responseThree"></span> // I really didn't like foreign languages, but (perhaps ironically) I've now learnt Spanish. </p>
+        <p style="position:relative;left:350px"> // I was mainly a science student, but I've always been creative and I still write some fiction. </p>
+        <p style="position:relative;left:380px"> // Onwards Cap'n! </p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="box">
+
+    <h1 style="position:relative;left:20px;color:#FF340B"> BLIMEY! </h1>
+
+    <p style="position:relative;left:50px">  </br> [ 'Those scurvy sea-dogs have been leaving mines again.' </p>
+    <p style="position:relative;left:80px">  </br> 'Good things we have some torpedos, eh?' </p>
+    <p style="position:relative;left:110px">  </br> '<span style="color:#FF06F8">Press space </span> to fire.' ] </br> </br> </br> </br> </p>
+
+  </div>
+  <div class="box">
+
+    <h1 style="position:relative;left:20px"> Into The Deep Sea-SS </h1>
+
+    <p style="position:relative;left:50px"> // Since we're getting aquainted, how about a silly one? <span style="color:#FF06F8"> Which is the porky pie? </span> </p>
+
+    <button style="position:relative;left:80px"  class="TTL" onclick="incorrectFour()"> I built an igloo and slept in it </button>
+    <button style="position:relative;left:110px" class="TTL" onclick="incorrectFour()"> I had a topknot </button>
+    <button style="position:relative;left:140px" class="TTL" onclick="correctFour()" > I was on a cereal commercial </button>
+
+    <div style="visibility:hidden" id="commentsFour">
+
+      <p style="position:relative;left:170px"> <span id="responseFour"></span> // Yes... we built an igloo in my friend's garden and I had a topknot. </p>
+      <p style="position:relative;left:200px"> </br> // Which of the following have I <span style="color:#FF06F8"> NOT </span> studied online? </p>
+
+      <button style="position:relative;left:230px" class="TTL" onclick="correctFive()"> Introduction to Sustainability (Coursera) </button>
+      <button style="position:relative;left:260px" class="TTL" onclick="incorrectFive()"> CIMA certificate in Business Accounting  </button>
+      <button style="position:relative;left:290px" class="TTL" onclick="incorrectFive()" > TEFL (Teaching English as a Foreign Language) </button>
+
+      <div style="visibility:hidden" id="commentsFive">
+        <p style="position:relative;left:320px"> <span id="responseFive"></span> // A Sustainability Course would be interesting. </p>
+        <p style="position:relative;left:350px"> // I still have one CIMA exam to do, but have been distracted by Javascript. </p>
+        <p style="position:relative;left:380px"> // My point is that I'm no stranger to online learning. </p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="box">
+
+    <h1 style="position:relative;left:20px;color:#FF340B"> WARNING </h1>
+
+    <p style="position:relative;left:50px"> </br> // Incoming... Dodge don't shoot. </br> </br>  </p>
+
+    <button class="button" style="position:relative;left:80px" onclick="increaseHostiles()">Increase difficulty</button>
+    <button class="button" style="position:relative;left:100px" onclick="decreaseHostiles()">Decrease difficulty</button>
+
+    <p></p>
+
+    <button class="button" style="position:relative;left:80px" onclick="deactivateHostiles()">Deactivate</button>
+    <button class="button" style="position:relative;left:100px" onclick="activateHostiles()">Reactivate</button>
+
+    <p style="position:relative;left:110px" id="responseHostiles">  </br> </p>
+
+
+  </div>
+  <div class="box">
+
+    <h1 style="position:relative;left:20px"> Last Time: <span style="color:#FF06F8">Find The Lies</span>  </h1>
+
+    <p style="position:relative;left:50px"> // What do you think of my application? This website is intended to...</p>
+
+    <button style="position:relative;left:80px"  class="TTL" onclick="incorrectSix()"> To use Javascript </button>
+    <button style="position:relative;left:110px" class="TTL" onclick="correctSix()"> To look professional </button>
+    <button style="position:relative;left:140px" class="TTL" onclick="incorrectSix()" > To be interactive </button>
+
+    <div style="visibility:hidden" id="commentsSix">
+
+      <p style="position:relative;left:170px"> <span id="responseSix"></span> // This website is designed to be different not serious. </p>
+      <p style="position:relative;left:200px"> </br> // Why do I want to study with <span style="color:#FF06F8"> Founders and Coders? </span>  </p>
+
+      <button style="position:relative;left:230px" class="TTL" onclick="correctSeven()"> To be taught everything about web development </button>
+      <button style="position:relative;left:260px" class="TTL" onclick="incorrectSeven()"> To grow alongside like-minded, talented people </button>
+      <button style="position:relative;left:290px" class="TTL" onclick="incorrectSeven()"> To gain a professional approach to programming </button>
+
+      <div style="visibility:hidden" id="commentsSeven">
+        <p style="position:relative;left:320px"> <span id="responseSeven"></span> // Developers will always need to selfteach. #StackOverflow4Lyf </p>
+        <p style="position:relative;left:350px"> // Founders and Coders is an incredible project that is driven by it's students. </p>
+        <p style="position:relative;left:380px"> // I want to be a contributing member!!! </p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="box">
+
+    <h1 style="position:relative;left:20px;"> Copyright </h1>
+
+    <p style="position:relative;left:50px"> [ 'The green and red logos (bottom right) are links to <a href="https://www.freecodecamp.org/rewitt94" style="color:#00F7FF">freeCodeCamp</a> and <a href="https://www.codewars.com/users/rewitt94" style="color:#00F7FF">CodeWars</a> respectively' , </p>
+    <p style="position:relative;left:80px"> 'My affliation with both of the above is having a user account' , </p>
+    <p style="position:relative;left:110px"> 'The CV image is a free clipart taken from <a href="https://www.freepik.com/" style="color:#00F7FF">freepik</a>' , </p>
+    <p style="position:relative;left:140px"> 'The submarine image is a clipart in the public domain published on <a href="https://thecliparts.com/the-best-free-clipart-23611/" style="color:#00F7FF">thecliparts</a>' , </p>
+    <p style="position:relative;left:170px"> 'The seamine explosion is a clipart in the public domain published on <a href="http://clipartix.com/explosion-clip-art-image-23571/" style="color:#00F7FF">clipartix</a>' , </p>
+    <p style="position:relative;left:200px"> 'The submarine explosion is a clipart in the public domain published on <a href="http://www.clipartpanda.com/categories/missile-clip-art-free" style="color:#00F7FF">clipartpanda</a>' , </p>
+    <p style="position:relative;left:230px"> 'The missile image is a clipart in the public domain also published on <a href="http://images.clipartpanda.com/missile-clipart-missile.png" style="color:#00F7FF">clipartpanda</a>' , </p>
+    <p style="position:relative;left:260px"> 'The shipwreck image is a clipart in the public domain published on <a href="https://thetomatos.com/free-clipart-37623/" style="color:#00F7FF">thetomatoes</a>' ] </p>
+    <p style="position:relative;left:290px"> </br>// I think they filmed the latest series of blue planet down here... </p>
+
+    <div id="end" style="color:#FF06F8;visibility:hidden">
+      <p style="position:relative;left:420px"> </br></br></br>// Congratulations you found the treasure.</p>
+      <p style="position:relative;left:450px"> // Thank you for your time, I hope to meet you at interview. </p>
+      <p style="position:relative;left:480px"> // Email: richard.hewitt.94@gmail.com </p>
+    </div>
+
+    <img src="https://thetomatos.com/wp-content/uploads/2017/05/shipwreck-clipart.png" style="width:300px;position:absolute;bottom:-10px">
+
+  </div>
+
+</div>
+
+<p style="position:fixed;bottom:2%;left:2%"> Lie Detection: <span id="score">N/A</span> </p>
+
+<div style="position:fixed;bottom:2%;right:2%">
+  <a href="https://www.freecodecamp.org/rewitt94"><img src="https://avatars0.githubusercontent.com/u/9892522?s=400&v=4" style="width:50px;border-radius:10%"></a>
+  <a href="https://www.codewars.com/users/rewitt94"><img src="http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png" style="width:50px;border-radius:10%"></a>
+  <a href="./files/CV.pdf" target="_blank"><img src="https://image.freepik.com/free-icon/curriculum-vitae-of-a-man_318-56682.jpg" style="width:50px;border-radius:10%"></a>
+</div>
+
+<button class="reload" onclick="reload()"> reload website </button>
+
+<img src="https://thecliparts.com/wp-content/uploads/2016/07/submarine-clipart-2.png" id="sub">
+
+
+
+<script>
+
+
+// alert('For the best experience please load and use this website with a fullsized window.')
+
+// Problems
+
+// I want to edit the CSS to their screen widths. There are issues with using 100%.
+
+// var width = screen.innerWidth;
+// var wrap = document.getElementsByClassName('wrapper');
+// wrap.style[grid-template-columns] = '';
+// for (i = 0; i < 11; i++) {
+//   wrap.style[grid-template-columns] += width +'px';
+// }
+
+var height = (window.innerHeight - 55).toString();
+// where the fuck are these 55 pixels?? Should this concern me?
+
+var box = document.getElementsByClassName('box');
+for (j = 0; j < box.length; j++) {
+  box[j].style.height = height +'px';
+}
+
+// Why are the hidden TTL buttons so small?
+
+
+// Zero
+// let's start with the submarine
+var sub = document.getElementById('sub');
+sub.style.bottom = '50px'
+sub.style.left = '50px'
+
+
+
+// One
+// all the booeans and numbers
+
+var unanswered = {
+  one: true,
+  two: true,
+  three: true,
+  four: true,
+  five: true,
+  six: true,
+  seven: true,
+}
+
+// counters to calculate score
+var correctCount = 0;
+var incorrectCount = 0;
+
+// your current checkpoint reached
+var checkpoint = {
+  one: false,
+  two: false,
+  three: false,
+  four: false,
+}
+
+// booleans for submarine movement direction
+var vector = {
+  up: false,
+  down: false,
+  left: false,
+  right: false
+}
+
+// booleans for submarine facing direction
+var facing = {
+  right: true,
+  left: false,
+}
+
+//
+
+// boolean for sub turbo
+var turbo = false;
+
+// booleans to manage sub death
+// N.B using two booleans to avoid multiple overlapping respawns
+var dead = false;
+var needRespawn = false;
+
+// probablity of enemy missle (hostile) spawn
+var hostilesActive = true;
+var probability = 0.991;
+
+
+
+// Two
+// next let's have our arrays
+
+// arrays for fired torpedos
+var firedRight = [];
+var firedLeft = [];
+
+// arrays for enemy rockets
+var hostiles = [];
+
+// array for mines
+var mines = [];
+
+
+
+// Three
+// These are buttons within the HTML
+
+function reload() {
+  window.scrollTo(0,0);
+  location.reload();
+}
+
+function calculateScore() {
+  var score = document.getElementById('score');
+  var percent = (Math.floor((correctCount / (correctCount + incorrectCount)) * 100)).toString()
+  score.innerHTML = percent + '%';
+}
+
+function decreaseHostiles() {
+  if (hostilesActive) {
+    if(probability <= 0.997) {
+      probability += 0.002;
+      var response = document.getElementById('responseHostiles');
+      response.innerHTML = '// Difficulty decreased';
+    } else {
+      var response = document.getElementById('responseHostiles');
+      response.innerHTML = '// Difficulty cannot decrease further';
+    }
+  }
+}
+
+function increaseHostiles() {
+  if (hostilesActive) {
+    probability -= 0.002;
+    var response = document.getElementById('responseHostiles');
+    response.innerHTML ='// Difficulty increased';
+  }
+}
+
+function deactivateHostiles() {
+  if (hostilesActive) {
+    hostilesActive = false;
+    var response = document.getElementById('responseHostiles');
+    response.innerHTML ='// Deactivated';
+  }
+}
+
+function activateHostiles() {
+  if (hostilesActive == false) {
+    hostilesActive = true;
+    var response = document.getElementById('responseHostiles');
+    response.innerHTML ='// Activated';
+  }
+}
+
+function correctOne() {
+  if (unanswered.one) {
+    correctCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[1].style.color = '#60FD11';
+    ttl[2].style.color = '#60FD11';
+    ttl[0].style.color = '#FF340B';
+    var response = document.getElementById('responseOne');
+    response.style.color = '#60FD11';
+    response.innerHTML = 'YOU FOUND THE LIE'
+    var comments = document.getElementById('commentsOne');
+    comments.style.visibility = 'visible';
+    unanswered.one = false;
+    calculateScore();
+  }
+}
+
+function incorrectOne() {
+  if (unanswered.one) {
+    incorrectCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[1].style.color = '#60FD11';
+    ttl[2].style.color = '#60FD11';
+    ttl[0].style.color = '#FF340B';
+    var response = document.getElementById('responseOne');
+    response.style.color = '#FF340B';
+    response.innerHTML = 'YOU CHOSE A TRUTH'
+    var comments = document.getElementById('commentsOne');
+    comments.style.visibility = 'visible';
+    unanswered.one = false;
+    calculateScore();
+  }
+}
+
+function correctTwo() {
+  if (unanswered.two) {
+    correctCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[3].style.color = '#60FD11';
+    ttl[4].style.color = '#60FD11';
+    ttl[5].style.color = '#FF340B';
+    var response = document.getElementById('responseTwo');
+    response.style.color = '#60FD11';
+    response.innerHTML = 'YOU FOUND THE LIE'
+    var comments = document.getElementById('commentsTwo');
+    comments.style.visibility = 'visible';
+    unaswered.two = false;
+    calculateScore();
+  }
+}
+
+function incorrectTwo() {
+  if (unanswered.three) {
+    incorrectCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[3].style.color = '#60FD11';
+    ttl[4].style.color = '#60FD11';
+    ttl[5].style.color = '#FF340B';
+    var response = document.getElementById('responseTwo');
+    response.style.color = '#FF340B';
+    response.innerHTML = 'YOU CHOSE A TRUTH'
+    var comments = document.getElementById('commentsTwo');
+    comments.style.visibility = 'visible';
+    unanswered.two = false;
+    calculateScore();
+  }
+}
+
+function correctThree() {
+  if (unanswered.three) {
+    correctCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[6].style.color = '#60FD11';
+    ttl[8].style.color = '#60FD11';
+    ttl[7].style.color = '#FF340B';
+    var response = document.getElementById('responseThree');
+    response.style.color = '#60FD11';
+    response.innerHTML = 'YOU FOUND THE LIE'
+    var comments = document.getElementById('commentsThree');
+    comments.style.visibility = 'visible';
+    unanswered.three = false;
+    calculateScore();
+  }
+}
+
+function incorrectThree() {
+  if (unanswered.three) {
+    incorrectCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[6].style.color = '#60FD11';
+    ttl[8].style.color = '#60FD11';
+    ttl[7].style.color = '#FF340B';
+    var response = document.getElementById('responseThree');
+    response.style.color = '#FF340B';
+    response.innerHTML = 'YOU CHOSE A TRUTH'
+    var comments = document.getElementById('commentsThree');
+    comments.style.visibility = 'visible';
+    unanswered.three = false;
+    calculateScore();
+  }
+}
+
+function correctFour() {
+  if (unanswered.four) {
+    correctCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[9].style.color = '#60FD11';
+    ttl[10].style.color = '#60FD11';
+    ttl[11].style.color = '#FF340B';
+    var response = document.getElementById('responseFour');
+    response.style.color = '#60FD11';
+    response.innerHTML = 'YOU FOUND THE LIE'
+    var comments = document.getElementById('commentsFour');
+    comments.style.visibility = 'visible';
+    unanswered.four = false;
+    calculateScore();
+  }
+}
+
+function incorrectFour() {
+  if (unanswered.four) {
+    incorrectCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[9].style.color = '#60FD11';
+    ttl[10].style.color = '#60FD11';
+    ttl[11].style.color = '#FF340B';
+    var response = document.getElementById('responseFour');
+    response.style.color = '#FF340B';
+    response.innerHTML = 'YOU CHOSE A TRUTH'
+    var comments = document.getElementById('commentsFour');
+    comments.style.visibility = 'visible';
+    unanswered.four = false;
+    calculateScore();
+  }
+}
+
+function correctFive() {
+  if (unanswered.five) {
+    correctCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[14].style.color = '#60FD11';
+    ttl[13].style.color = '#60FD11';
+    ttl[12].style.color = '#FF340B';
+    var response = document.getElementById('responseFive');
+    response.style.color = '#60FD11';
+    response.innerHTML = 'YOU FOUND THE LIE'
+    var comments = document.getElementById('commentsFive');
+    comments.style.visibility = 'visible';
+    unanswered.five = false;
+    calculateScore();
+  }
+}
+
+function incorrectFive() {
+  if (unanswered.five) {
+    incorrectCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[14].style.color = '#60FD11';
+    ttl[13].style.color = '#60FD11';
+    ttl[12].style.color = '#FF340B';
+    var response = document.getElementById('responseFive');
+    response.style.color = '#FF340B';
+    response.innerHTML = 'YOU CHOSE A TRUTH'
+    var comments = document.getElementById('commentsFive');
+    comments.style.visibility = 'visible';
+    unanswered.five = false;
+    calculateScore();
+  }
+}
+
+function correctSix() {
+  if (unanswered.six) {
+    correctCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[15].style.color = '#60FD11';
+    ttl[17].style.color = '#60FD11';
+    ttl[16].style.color = '#FF340B';
+    var response = document.getElementById('responseSix');
+    response.style.color = '#60FD11';
+    response.innerHTML = 'YOU FOUND THE LIE'
+    var comments = document.getElementById('commentsSix');
+    comments.style.visibility = 'visible';
+    unanswered.six = false;
+    calculateScore();
+  }
+}
+
+function incorrectSix() {
+  if (unanswered.six) {
+    incorrectCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[15].style.color = '#60FD11';
+    ttl[17].style.color = '#60FD11';
+    ttl[16].style.color = '#FF340B';
+    var response = document.getElementById('responseSix');
+    response.style.color = '#FF340B';
+    response.innerHTML = 'YOU CHOSE A TRUTH'
+    var comments = document.getElementById('commentsSix');
+    comments.style.visibility = 'visible';
+    unanswered.six = false;
+    calculateScore();
+  }
+}
+
+function correctSeven() {
+  if (unanswered.seven) {
+    correctCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[20].style.color = '#60FD11';
+    ttl[19].style.color = '#60FD11';
+    ttl[18].style.color = '#FF340B';
+    var response = document.getElementById('responseSeven');
+    response.style.color = '#60FD11';
+    response.innerHTML = 'YOU FOUND THE LIE'
+    var comments = document.getElementById('commentsSeven');
+    comments.style.visibility = 'visible';
+    unanswered.seven = false;
+    calculateScore();
+  }
+}
+
+function incorrectSeven() {
+  if (unanswered.seven) {
+    incorrectCount++;
+    var ttl = document.getElementsByClassName('TTL');
+    ttl[20].style.color = '#60FD11';
+    ttl[19].style.color = '#60FD11';
+    ttl[18].style.color = '#FF340B';
+    var response = document.getElementById('responseSeven');
+    response.style.color = '#FF340B';
+    response.innerHTML = 'YOU CHOSE A TRUTH'
+    var comments = document.getElementById('commentsSeven');
+    comments.style.visibility = 'visible';
+    unanswered.seven = false;
+    calculateScore();
+  }
+}
+
+
+
+// Four
+// This is the bulk of the code
+// let's define or functions that run on loop
+
+function subMove() {
+  if (turbo) {
+    if (vector.up) {
+       sub.style.bottom = parseInt(sub.style.bottom) + 5 + 'px';
+    }
+    if (vector.down) {
+      sub.style.bottom = parseInt(sub.style.bottom) - 5 + 'px';
+    }
+    if (vector.left) {
+      sub.style.left = parseInt(sub.style.left) - 5 + 'px';
+    }
+    if (vector.right) {
+      sub.style.left = parseInt(sub.style.left) + 5 + 'px';
+    }
+    if (facing.left) {
+      sub.style['-moz-transform'] = 'scaleX(-1)';
+      sub.style['-o-transform'] = 'scaleX(-1)';
+      sub.style['-webkit-transform'] = 'scaleX(-1)';
+      sub.style.transform = 'scaleX(-1)';
+      sub.style.filter = 'FlipH';
+      sub.style['-ms-filter'] = 'FlipH';
+    }
+    if (facing.right) {
+      sub.style['-moz-transform'] = 'none';
+      sub.style['-o-transform'] = 'none';
+      sub.style['-webkit-transform'] = 'none';
+      sub.style.transform = 'none';
+      sub.style.filter = 'none';
+      sub.style['-ms-filter'] = 'none';
+    }
+  } else {
+    if (vector.up) {
+       sub.style.bottom = parseInt(sub.style.bottom) + 3 + 'px';
+    }
+    if (vector.down) {
+      sub.style.bottom = parseInt(sub.style.bottom) - 3 + 'px';
+    }
+    if (vector.left) {
+      sub.style.left = parseInt(sub.style.left) - 3 + 'px';
+    }
+    if (vector.right) {
+      sub.style.left = parseInt(sub.style.left) + 3 + 'px';
+    }
+    if (facing.left) {
+      sub.style['-moz-transform'] = 'scaleX(-1)';
+      sub.style['-o-transform'] = 'scaleX(-1)';
+      sub.style['-webkit-transform'] = 'scaleX(-1)';
+      sub.style.transform = 'scaleX(-1)';
+      sub.style.filter = 'FlipH';
+      sub.style['-ms-filter'] = 'FlipH';
+    }
+    if (facing.right) {
+      sub.style['-moz-transform'] = 'none';
+      sub.style['-o-transform'] = 'none';
+      sub.style['-webkit-transform'] = 'none';
+      sub.style.transform = 'none';
+      sub.style.filter = 'none';
+      sub.style['-ms-filter'] = 'none';
+    }
+  }
+}
+
+function torpedoMove() {
+  if (firedRight.length > 0) {
+    for (i = 0; i < firedRight.length; i++) {
+      firedRight[i].style.left = parseInt(firedRight[i].style.left) + 12 + 'px';
+    }
+  }
+  if (firedLeft.length > 0) {
+    for (i = 0; i < firedLeft.length; i++) {
+      firedLeft[i].style.left = parseInt(firedLeft[i].style.left) - 12 + 'px';
+    }
+  }
+}
+
+function scrollCheck() {
+
+}
+
+function scroll() {
+  if (turbo) {
+    if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) > window.innerWidth - 700) {
+      window.scrollBy(5, 0);
+    }
+    if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) < 500) {
+      window.scrollBy(-5, 0);
+    }
+  } else {
+    if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) > window.innerWidth - 700) {
+      window.scrollBy(3, 0);
+    }
+    if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) < 500) {
+      if (checkpoint.three == false) {
+      window.scrollBy(-3, 0);
+      }
+    }
+  }
+}
+
+function currentCheckpoint() {
+  if (Number(sub.style.left.slice(0,-2)) < window.innerWidth * 4.5) {
+    checkpoint.one = true;
+    checkpoint.two = false;
+    checkpoint.three = false;
+  }
+  if (Number(sub.style.left.slice(0,-2)) > window.innerWidth * 4.5 && Number(sub.style.left.slice(0,-2)) < window.innerWidth * 6 ) {
+    checkpoint.one = false;
+    checkpoint.two = true;
+    checkpoint.three = false;
+  }
+  if (Number(sub.style.left.slice(0,-2)) > window.innerWidth * 7 + 100) {
+    checkpoint.one = false;
+    checkpoint.two = false;
+    checkpoint.three = true;
+  }
+}
+
+function mineCollision() {
+  if (mines.length > 0) {
+    for (i = 0; i < mines.length; i++) {
+      horizontalHit = (Number(mines[i].style.left.slice(0,-2)) - 180< Number(sub.style.left.slice(0,-2)) && Number(mines[i].style.left.slice(0,-2)) + 30 > Number(sub.style.left.slice(0,-2)));
+      verticalHit = (Number(mines[i].style.bottom.slice(0,-2)) - 80 < Number(sub.style.bottom.slice(0,-2)) && Number(mines[i].style.bottom.slice(0,-2)) + 45 > Number(sub.style.bottom.slice(0,-2)));
+      if (verticalHit && horizontalHit) {
+        dead = true;
+        needRespawn = true;
+        var detonated = mines.splice(i,1)[0];
+        detonated.src = 'http://clipartix.com/wp-content/uploads/2016/06/Explosion-free-to-use-clip-art.png';
+        detonated.setAttribute("class", "destroyed");
+      }
+    }
+  }
+}
+
+function mineShoot() {
+  // torpedo firedRight shoots mine
+  if ((mines.length && firedRight.length > 0)) {
+    for (i = 0; i < firedRight.length; i++) {
+      for (j = 0; j < mines.length; j++) {
+        horizontalHit = (Number(mines[j].style.left.slice(0,-2)) - 10 < Number(firedRight[i].style.left.slice(0,-2)) && Number(mines[j].style.left.slice(0,-2)) + 10 > Number(firedRight[i].style.left.slice(0,-2)));
+        verticalHit = (Number(mines[j].style.bottom.slice(0,-2)) - 10 < Number(firedRight[i].style.bottom.slice(0,-2)) && Number(mines[j].style.bottom.slice(0,-2)) + 50 > Number(firedRight[i].style.bottom.slice(0,-2)));
+        if (verticalHit && horizontalHit) {
+          var detonated = mines.splice(j,1)[0];
+          detonated.src = 'http://clipartix.com/wp-content/uploads/2016/06/Explosion-free-to-use-clip-art.png';
+          detonated.setAttribute("class", "destroyed");
+        }
+      }
+    }
+  }
+  // torpedo firedLeft shoots mine
+  if ((mines.length && firedLeft.length > 0)) {
+    for (i = 0; i < firedLeft.length; i++) {
+      for (j = 0; j < mines.length; j++) {
+        horizontalHit = (Number(mines[j].style.left.slice(0,-2)) - 10 < Number(firedLeft[i].style.left.slice(0,-2)) && Number(mines[j].style.left.slice(0,-2)) + 10 > Number(firedLeft[i].style.left.slice(0,-2)));
+        verticalHit = (Number(mines[j].style.bottom.slice(0,-2)) - 10 < Number(firedLeft[i].style.bottom.slice(0,-2)) && Number(mines[j].style.bottom.slice(0,-2)) + 50 > Number(firedLeft[i].style.bottom.slice(0,-2)));
+        if (verticalHit && horizontalHit) {
+          var detonated = mines.splice(j,1)[0];
+          detonated.src = 'http://clipartix.com/wp-content/uploads/2016/06/Explosion-free-to-use-clip-art.png';
+          detonated.setAttribute("class", "destroyed");
+        }
+      }
+    }
+  }
+}
+
+function death() {
+  if (dead) {
+    vector.up = false;
+    vector.down = false;
+    vector.left = false;
+    vector.right = false;
+    sub.src = 'http://images.clipartpanda.com/explosion-clipart-explosion6.png';
+  }
+}
+
+function respawnCheck() {
+  if (needRespawn) {
+    setTimeout( () => respawn(), 1000 )
+    needRespawn = false;
+  }
+}
+
+function respawn() {
+  dead = false;
+  facing.left = false;
+  facing.right = true;
+  sub.src = "https://thecliparts.com/wp-content/uploads/2016/07/submarine-clipart-2.png";
+  sub.style.left = respawnPoint();
+  sub.style.bottom = '50px';
+}
+
+function respawnPoint() {
+  if (checkpoint.one) {
+    return (window.innerWidth * 3 + 100).toString() + 'px'
+  } else if (checkpoint.two) {
+    return (window.innerWidth * 4.70).toString() + 'px'
+  }
+}
+
+// current set to event listener 'x'
+
+function hostileSpawn() {
+  if (hostilesActive) {
+    if (Math.random() + 0.01 > probability) {
+      var switcher = Math.floor(Math.random() * 4);
+      switch(switcher) {
+        case 0:
+          var hostile = document.createElement('IMG');
+          hostile.src = "http://images.clipartpanda.com/missile-clipart-missile.png";
+          hostile.style.width = '60px';
+          hostile.style.position = 'absolute';
+          var generalAngle = Math.atan((2 * window.innerHeight) / window.innerWidth);
+          var hostileAngle = (Math.random()* generalAngle) + (Math.PI * 1.5 - generalAngle);
+          hostile.id = hostileAngle.toString().slice(0,4);
+          hostile.style.transform = 'rotate(' + hostileAngle.toString() + 'rad)';
+          hostile.style.left = (window.innerWidth * 5 + Math.random() * window.innerWidth * 0.5 - 70).toString() + 'px';
+          hostile.style.bottom = (window.innerHeight - 50).toString() + 'px';
+          document.body.appendChild(hostile);
+          hostiles.push(hostile);
+          setTimeout( () => hostiles.shift(), 3000);
+          document.body.appendChild(hostile);
+          setTimeout( () => hostile.remove(), 3000);
+          break;
+        case 1:
+          var hostile = document.createElement('IMG');
+          hostile.src = "http://images.clipartpanda.com/missile-clipart-missile.png";
+          hostile.style.width = '60px';
+          hostile.style.position = 'absolute';
+          var generalAngle = Math.atan((2 * window.innerHeight) / window.innerWidth);
+          var hostileAngle = (Math.random()* generalAngle) + Math.PI * 1.5;
+          hostile.id = hostileAngle.toString().slice(0,4);
+          hostile.style.transform = 'rotate(' + hostileAngle.toString() + 'rad)';
+          hostile.style.left = (window.innerWidth * 5.5 + Math.random() * window.innerWidth * 0.5 - 70).toString() + 'px';
+          hostile.style.bottom = (window.innerHeight - 50).toString() + 'px';
+          document.body.appendChild(hostile);
+          hostiles.push(hostile);
+          setTimeout( () => hostiles.shift(), 3000);
+          document.body.appendChild(hostile);
+          setTimeout( () => hostile.remove(), 3000);
+          break;
+        case 2:
+          var hostile = document.createElement('IMG');
+          hostile.src = "http://images.clipartpanda.com/missile-clipart-missile.png";
+          hostile.style.width = '60px';
+          hostile.style.position = 'absolute';
+          var generalAngle = Math.atan((2 * window.innerHeight) / window.innerWidth);
+          var hostileAngle = (Math.random()* generalAngle) + Math.PI * 0.5;
+          hostile.id = hostileAngle.toString().slice(0,4);
+          hostile.style.transform = 'rotate(' + hostileAngle.toString() + 'rad)';
+          hostile.style.left = (window.innerWidth * 5 + Math.random() * window.innerWidth * 0.5 - 70).toString() + 'px';
+          hostile.style.bottom = '-50px';
+          document.body.appendChild(hostile);
+          hostiles.push(hostile);
+          setTimeout( () => hostiles.shift(), 3000);
+          document.body.appendChild(hostile);
+          setTimeout( () => hostile.remove(), 3000);
+          break;
+        case 3:
+          var hostile = document.createElement('IMG');
+          hostile.src = "http://images.clipartpanda.com/missile-clipart-missile.png";
+          hostile.style.width = '60px';
+          hostile.style.position = 'absolute';
+          var generalAngle = Math.atan((2 * window.innerHeight) / window.innerWidth);
+          var hostileAngle = (Math.random()* generalAngle) + (0.5 * Math.PI - generalAngle);
+          hostile.id = hostileAngle.toString().slice(0,4);
+          hostile.style.transform = 'rotate(' + hostileAngle.toString() + 'rad)';
+          hostile.style.left = (window.innerWidth * 5.5 + Math.random() * window.innerWidth * 0.5 - 70).toString() + 'px';
+          hostile.style.bottom = '-50px';
+          document.body.appendChild(hostile);
+          hostiles.push(hostile);
+          setTimeout( () => hostiles.shift(), 3000);
+          document.body.appendChild(hostile);
+          setTimeout( () => hostile.remove(), 3000);
+          break;
+      }
+    }
+  }
+}
+
+
+function hostileMove() {
+  if(hostiles.length > 0) {
+    for(i = 0; i < hostiles.length; i++) {
+    hostiles[i].style.left = parseInt(hostiles[i].style.left) - Math.floor(5 * Math.cos(Number(hostiles[i].id))) + 'px';
+    hostiles[i].style.bottom = parseInt(hostiles[i].style.bottom) + Math.floor(5 * Math.sin(Number(hostiles[i].id)))+ 'px';
+    }
+  }
+}
+
+function hostileHit() {
+  if(hostiles.length > 0) {
+    for(i = 0; i < hostiles.length; i++) {
+      var verticalHit = (Number(hostiles[i].style.bottom.slice(0,-2)) - 60 < Number(sub.style.bottom.slice(0,-2)) && Number(hostiles[i].style.bottom.slice(0,-2)) + 20 > Number(sub.style.bottom.slice(0,-2)));
+      var horizontalHit = (Number(hostiles[i].style.left.slice(0,-2)) - 150 < Number(sub.style.left.slice(0,-2)) && Number(hostiles[i].style.left.slice(0,-2)) + 10 > Number(sub.style.left.slice(0,-2)));
+      if (verticalHit && horizontalHit) {
+        dead = true;
+        needRespawn = true;
+      }
+    }
+  }
+}
+
+function endGame() {
+  if (checkpoint.three) {
+    document.removeEventListener('keydown', onDown)
+    vector.up = false;
+    facing.right  = true;
+    turbo = false;
+    vector.right = true;
+    if (Number(sub.style.left.slice(0,-2)) > window.innerWidth * 7 ) {
+      vector.right = false;
+    }
+    vector.down = true;
+    if (Number(sub.style.bottom.slice(0,-2)) < 0) {
+      vector.down = false;
+    }
+    if (window.pageXOffset < window.innerWidth * 7 + 80) {
+      window.scrollBy(3,0);
+    }
+    setTimeout( () => reveal(), 2500);
+  }
+}
+
+function reveal() {
+  end = document.getElementById('end');
+  end.style.visibility = 'visible';
+}
+
+// }
+
+
+
+// Five
+// These our functions called on interval
+
+function update() {
+  subMove();
+  torpedoMove();
+  scroll();
+  currentCheckpoint();
+  mineCollision();
+  mineShoot();
+  death();
+  respawnCheck();
+  hostileSpawn();
+  hostileMove();
+  hostileHit();
+  endGame();
+}
+
+function sweep() {
+  var removables = document.getElementsByClassName('destroyed')
+  if (removables.length > 0) {
+    for (x = 0; x < removables.length; x++) {
+      removables[x].remove();
+    }
+  }
+}
+
+
+
+// Six
+// These are our intervals
+
+setInterval(update, 10);
+
+setInterval(sweep, 1000);
+
+
+
+// Seven
+// This is our code that is used only once
+
+function mineSpawn() {
+  while (mines.length < 30) {
+    var mine = document.createElement("IMG");
+    mine.setAttribute( "src", "http://www.clker.com/cliparts/c/e/7/c/1230571109126653456rg1024_cartoon_sea_mine.svg.med.png" );
+    mine.setAttribute( "style", "position:absolute;width:60px" );
+    mine.style.left = (((Math.random() * 0.4) + 3.5) * window.innerWidth).toString() + 'px';
+    mine.style.bottom = (((Math.random() * 0.8) + 0.1) * window.innerHeight).toString() + 'px';
+    document.body.appendChild(mine);
+    mines.push(mine);
+  }
+}
+
+mineSpawn();
+
+
+
+// Eight
+// Finanlly, our Event Listeners for the controls
+
+const onDown = event => down(event.which)
+const onUp = event => up(event.which)
+
+document.addEventListener('keydown', onDown)
+document.addEventListener('keyup', onUp)
+
+function down(keycode) {
+  // start movement with keydown
+  if (dead == false) {
+    if (keycode == 38) {
+      vector.up = true
+    }
+    if (keycode == 40) {
+      vector.down = true
+    }
+    if (keycode == 37) {
+      vector.left = true;
+      facing.left = true;
+      facing.right = false;
+      // flip submarine
+    }
+    if (keycode == 39) {
+        vector.right = true;
+        facing.right = true;
+        facing.left = false;
+        // unflip submarine
+    }
+    if (keycode == 90) {
+      turbo = true;
+    }
+  }
+}
+
+function up(keycode) {
+  // stop movement with keyup
+  if (keycode == 38) {
+    vector.up = false
+  }
+  if (keycode == 40) {
+    vector.down = false
+  }
+  if (keycode == 37) {
+    vector.left = false
+  }
+  if (keycode == 39) {
+    vector.right = false
+  }
+  // spawn torpedo
+  if (keycode == 32) {
+    if (firedRight.length + firedLeft.length < 5  && dead == false) {
+      var torpedo = document.createElement("IMG");
+      torpedo.setAttribute( "src", "http://www.clker.com/cliparts/1/E/6/6/w/J/bomb-hi.png");
+      torpedo.setAttribute( "style", "position:absolute;width:60px" );
+      torpedo.style.bottom = sub.style.bottom;
+      if (facing.right) {
+        torpedo.style.left = (Number(sub.style.left.slice(0,-2)) + 90).toString() + 'px';
+        firedRight.push(torpedo);
+        setTimeout( () => firedRight.shift(), 2000);
+        document.body.appendChild(torpedo);
+        setTimeout( () => torpedo.remove(), 2000);
+      }
+      if (facing.left) {
+        torpedo.style.left = (Number(sub.style.left.slice(0,-2)) + 58).toString() + 'px';
+        torpedo.style['-moz-transform'] = 'scaleX(-1)';
+        torpedo.style['-o-transform'] = 'scaleX(-1)';
+        torpedo.style['-webkit-transform'] = 'scaleX(-1)';
+        torpedo.style.transform = 'scaleX(-1)';
+        torpedo.style.filter = 'FlipH';
+        torpedo.style['-ms-filter'] = 'FlipH';
+        firedLeft.push(torpedo)
+        setTimeout( () => firedLeft.shift(), 2000)
+        document.body.appendChild(torpedo);
+        setTimeout( () => torpedo.remove(), 2000);
+      }
+    }
+  }
+  if (keycode == 90) {
+    turbo = false;
+  }
+}
+
+
+</script>

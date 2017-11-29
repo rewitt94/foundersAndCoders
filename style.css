@@ -1,0 +1,61 @@
+body {
+  background: #fff;
+  font-family: Monaco;
+  color: #F3F0F0;
+  font-size: 1vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+
+.box {
+  height: 500px;
+  background-color: #282828;
+  color: #F3F0F0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#sub {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 200px;
+}
+
+.TTL {
+  width: 20%;
+  min-height: 18%;
+  height: 18%;
+  color: white;
+  font-size: 1.2vw;
+  background-color: transparent;
+}
+
+
+.reload {
+  position:fixed;
+  width:10%;
+  left:46%;
+  bottom:4%;
+  padding:0.5%;
+  border-radius:5%;
+  color: white;
+  background-color: transparent;
+}
+
+.button {
+  width: 12%;
+  height: 8%;
+  color: white;
+  font-size: 90%;
+  background-color: transparent;
+}
