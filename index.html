@@ -188,27 +188,27 @@
 <script>
 
 
-function detectmob() { 
- if( navigator.userAgent.match(/Android/i)
- || navigator.userAgent.match(/webOS/i)
- || navigator.userAgent.match(/iPhone/i)
- || navigator.userAgent.match(/iPad/i)
- || navigator.userAgent.match(/iPod/i)
- || navigator.userAgent.match(/BlackBerry/i)
- || navigator.userAgent.match(/Windows Phone/i)
- ){
-    return true;
-  }
- else {
-    return false;
-  }
-}
+// function detectmob() { 
+//  if( navigator.userAgent.match(/Android/i)
+//  || navigator.userAgent.match(/webOS/i)
+//  || navigator.userAgent.match(/iPhone/i)
+//  || navigator.userAgent.match(/iPad/i)
+//  || navigator.userAgent.match(/iPod/i)
+//  || navigator.userAgent.match(/BlackBerry/i)
+//  || navigator.userAgent.match(/Windows Phone/i)
+//  ){
+//     return true;
+//   }
+//  else {
+//     return false;
+//   }
+// }
   
-var mobileTest = detectmob();
+// var mobileTest = detectmob();
 
-if (mobileTest == true) {
-  alert('Sorry, this website will not work on mobiles.')
-}
+// if (mobileTest == true) {
+//   alert('Sorry, this website will not work on mobiles.')
+// }
 
 // Problems
 
@@ -216,18 +216,30 @@ if (mobileTest == true) {
 
 // var width = screen.innerWidth;
 // var wrap = document.getElementsByClassName('wrapper');
-// wrap.style[grid-template-columns] = '';
-// for (i = 0; i < 11; i++) {
-//   wrap.style[grid-template-columns] += width +'px';
-// }
-
-var height = (window.innerHeight - 55).toString();
-// where the fuck are these 55 pixels?? Should this concern me?
-
-var box = document.getElementsByClassName('box');
-for (j = 0; j < box.length; j++) {
-  box[j].style.height = height +'px';
+  
+string = '';
+for (i = 0; i < 11; i++) {
+  string += width +'px ';
 }
+  
+var style = document.createElement("style");
+var collumn = '';
+for (i = 0; i < 11; i++) {
+  collumn += width +'px ';
+}
+
+style.innerText = ".wrapper: { grid-template-columns:" + collumn + "}"
+
+document.body.appendChild(style);
+
+  
+// var height = (window.innerHeight - 55).toString();
+// // where the fuck are these 55 pixels??
+
+// var box = document.getElementsByClassName('box');
+// for (j = 0; j < box.length; j++) {
+//   box[j].style.height = height +'px';
+// }
 
 // Why are the hidden TTL buttons so small?
 
