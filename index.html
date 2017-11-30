@@ -187,22 +187,6 @@
 
 <script>
 
-
-// function detectmob() { 
-//  if( navigator.userAgent.match(/Android/i)
-//  || navigator.userAgent.match(/webOS/i)
-//  || navigator.userAgent.match(/iPhone/i)
-//  || navigator.userAgent.match(/iPad/i)
-//  || navigator.userAgent.match(/iPod/i)
-//  || navigator.userAgent.match(/BlackBerry/i)
-//  || navigator.userAgent.match(/Windows Phone/i)
-//  ){
-//     return true;
-//   }
-//  else {
-//     return false;
-//   }
-// }
   
 // var mobileTest = detectmob();
 
@@ -211,17 +195,12 @@
 // }
 
 // Problems
-
-// I want to edit the CSS to their screen widths. There are issues with using 100%.
-
-// var width = screen.innerWidth;
-// var wrap = document.getElementsByClassName('wrapper');
   
-var width = screen.width - 10;
+var yourWidth = screen.width - 10;
   
 string = '';
 for (i = 0; i < 11; i++) {
-  string += width +'px ';
+  string += yourWidth +'px ';
 }
   
 var style = document.createElement("style");
@@ -234,16 +213,6 @@ style.innerText = ".wrapper { grid-template-columns:" + collumn + " }"
 
 document.body.appendChild(style);
 
-  
-// var height = (window.innerHeight - 55).toString();
-// // where the fuck are these 55 pixels??
-
-// var box = document.getElementsByClassName('box');
-// for (j = 0; j < box.length; j++) {
-//   box[j].style.height = height +'px';
-// }
-
-// Why are the hidden TTL buttons so small?
 
 
 // Zero
