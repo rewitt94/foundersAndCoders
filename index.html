@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<title> Founders and Coders </title>
+
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
 
 <div class="wrapper">
@@ -11,9 +13,8 @@
     <p style="position:relative;left:50px"> [ 'Welcome Founders and Coders!' , </p>
     <p style="position:relative;left:80px">  'I'm Ricky,  </p>
     <p style="position:relative;left:110px"> 'Please use the <span style="color:#FF06F8"> arrow keys </span> to control your submarine and travel to the right.' ,  </p>
-    <p style="position:relative;left:140px"> 'The prequisites can be found in the bottom right corner.' </p>
-    <p style="position:relative;left:170px"> 'This has been tested on Chrome,...' ] </p>
-    <p style="position:relative;left:200px">  // Let's play two truths and a lie. <span style="color:#FF06F8"> Please use the mouse to click on the lie. </span> </p>
+    <p style="position:relative;left:140px"> 'The prerequisites can be found in the bottom right corner.' ] </p>
+    <p style="position:relative;left:170px">  </br> // Let's play two truths and a lie. <span style="color:#FF06F8"> Please use the mouse to click on the lie. </span> </p>
 
     <button style="position:relative;left:230px" class="TTL" onclick="correctOne()"> I built the Eiffel Tower </button>
     <button style="position:relative;left:260px" class="TTL" onclick="incorrectOne()"> I am 23 years old </button>
@@ -75,7 +76,7 @@
 
     <h1 style="position:relative;left:20px"> Into The Deep Sea-SS </h1>
 
-    <p style="position:relative;left:50px"> // Since we're getting aquainted, how about a silly one? <span style="color:#FF06F8"> Which is the porky pie? </span> </p>
+    <p style="position:relative;left:50px"> // Since we're getting acquainted, how about a silly one? <span style="color:#FF06F8"> Which is the porky pie? </span> </p>
 
     <button style="position:relative;left:80px"  class="TTL" onclick="incorrectFour()"> I built an igloo and slept in it </button>
     <button style="position:relative;left:110px" class="TTL" onclick="incorrectFour()"> I had a topknot </button>
@@ -92,7 +93,7 @@
 
       <div style="visibility:hidden" id="commentsFive">
         <p style="position:relative;left:320px"> <span id="responseFive"></span> // A Sustainability Course would be interesting. </p>
-        <p style="position:relative;left:350px"> // I still have one CIMA exam to do, but have been distracted by Javascript. </p>
+        <p style="position:relative;left:350px"> // I still have one CIMA exam to do, but I have been distracted by Javascript. </p>
         <p style="position:relative;left:380px"> // My point is that I'm no stranger to online learning. </p>
       </div>
 
@@ -121,7 +122,7 @@
 
     <h1 style="position:relative;left:20px"> Last Time: <span style="color:#FF06F8">Find The Lies</span>  </h1>
 
-    <p style="position:relative;left:50px"> // What do you think of my application? This website is intended to...</p>
+    <p style="position:relative;left:50px"> // What do you think of my application? This website is intended...</p>
 
     <button style="position:relative;left:80px"  class="TTL" onclick="incorrectSix()"> To use Javascript </button>
     <button style="position:relative;left:110px" class="TTL" onclick="correctSix()"> To look professional </button>
@@ -150,7 +151,7 @@
     <h1 style="position:relative;left:20px;"> Copyright </h1>
 
     <p style="position:relative;left:50px"> [ 'The green and red logos (bottom right) are links to <a href="https://www.freecodecamp.org/rewitt94" style="color:#00F7FF">freeCodeCamp</a> and <a href="https://www.codewars.com/users/rewitt94" style="color:#00F7FF">CodeWars</a> respectively' , </p>
-    <p style="position:relative;left:80px"> 'My affliation with both of the above is having a user account' , </p>
+    <p style="position:relative;left:80px"> 'My affiliation with both of the above is having a user account' , </p>
     <p style="position:relative;left:110px"> 'The CV image is a free clipart taken from <a href="https://www.freepik.com/" style="color:#00F7FF">freepik</a>' , </p>
     <p style="position:relative;left:140px"> 'The submarine image is a clipart in the public domain published on <a href="https://thecliparts.com/the-best-free-clipart-23611/" style="color:#00F7FF">thecliparts</a>' , </p>
     <p style="position:relative;left:170px"> 'The seamine explosion is a clipart in the public domain published on <a href="http://clipartix.com/explosion-clip-art-image-23571/" style="color:#00F7FF">clipartix</a>' , </p>
@@ -183,40 +184,48 @@
 
 <img src="https://thecliparts.com/wp-content/uploads/2016/07/submarine-clipart-2.png" id="sub">
 
+<div id="warning" style="position:fixed;left:0%;bottom:0%;width:100%;height:100%;background-color:#282828;z-index:999">
+  <h1 style="position:absolute;top:25%;left:20%;width:60%;text-align:center"> Please view this website with your browser maximised. This will not work on mobile. For the best experience <span style="color:#FF06F8"> please use Chrome</span>. CSS grid layout is not fully compatible is IE. I have encountered   slight lag on Safari and a bug on Firefox. </h1>
+  <button class="TTL" style="position:absolute;bottom:10%;left:40%;width:20%" onclick="start()"> I have read this warning </button>
+</div>
 
 
 <script>
 
-  
-// var mobileTest = detectmob();
+// here's my javascript :)
 
-// if (mobileTest == true) {
-//   alert('Sorry, this website will not work on mobiles.')
-// }
 
-// Problems
-  
-var screenWidth = screen.width - 10;
-  
-string = '';
-for (i = 0; i < 11; i++) {
-  string += screenWidth +'px ';
-}
-  
+// Zero
+// Code that is run only once.
+
+// set box width to screen size
+
 var style = document.createElement("style");
 var collumn = '';
 for (i = 0; i < 11; i++) {
-  collumn += screenWidth +'px ';
+  collumn += screen.width +'px ';
 }
 
 style.innerText = ".wrapper { grid-template-columns:" + collumn + " }"
 
 document.body.appendChild(style);
 
+// spawn mines
 
+function mineSpawn() {
+  while (mines.length < 30) {
+    var mine = document.createElement("IMG");
+    mine.setAttribute( "src", "http://www.clker.com/cliparts/c/e/7/c/1230571109126653456rg1024_cartoon_sea_mine.svg.med.png" );
+    mine.setAttribute( "style", "position:absolute;width:60px" );
+    mine.style.left = (((Math.random() * 0.4) + 3.5) * screen.width).toString() + 'px';
+    mine.style.bottom = (((Math.random() * 0.8) + 0.1) * window.innerHeight).toString() + 'px';
+    document.body.appendChild(mine);
+    mines.push(mine);
+  }
+}
 
-// Zero
-// let's start with the submarine
+// position the submarine
+
 var sub = document.getElementById('sub');
 sub.style.bottom = '50px'
 sub.style.left = '50px'
@@ -245,7 +254,6 @@ var checkpoint = {
   one: false,
   two: false,
   three: false,
-  four: false,
 }
 
 // booleans for submarine movement direction
@@ -262,8 +270,6 @@ var facing = {
   left: false,
 }
 
-//
-
 // boolean for sub turbo
 var turbo = false;
 
@@ -279,7 +285,8 @@ var probability = 0.991;
 
 
 // Two
-// next let's have our arrays
+// next the arrays
+// these are used for things we have many of e.g. torpedos, mines and missles.
 
 // arrays for fired torpedos
 var firedRight = [];
@@ -290,11 +297,16 @@ var hostiles = [];
 
 // array for mines
 var mines = [];
-
-
+// this function (found above can be called once the array exists)
+mineSpawn();
 
 // Three
 // These are buttons within the HTML
+
+function start() {
+  var warning = document.getElementById('warning');
+  warning.style.visibility = 'hidden';
+}
 
 function reload() {
   window.scrollTo(0,0);
@@ -586,7 +598,9 @@ function incorrectSeven() {
 
 // Four
 // This is the bulk of the code
-// let's define or functions that run on loop
+// Here are the functions that run on loop
+
+// to move the submarine dependent on movement booleans
 
 function subMove() {
   if (turbo) {
@@ -650,6 +664,8 @@ function subMove() {
   }
 }
 
+// to move existing torpedos
+
 function torpedoMove() {
   if (firedRight.length > 0) {
     for (i = 0; i < firedRight.length; i++) {
@@ -663,20 +679,18 @@ function torpedoMove() {
   }
 }
 
-function scrollCheck() {
-
-}
+// to scroll left and right with sub movement
 
 function scroll() {
   if (turbo) {
-    if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) > window.innerWidth - 700) {
+    if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) > screen.width - 700) {
       window.scrollBy(5, 0);
     }
     if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) < 500) {
       window.scrollBy(-5, 0);
     }
   } else {
-    if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) > window.innerWidth - 700) {
+    if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) > screen.width - 700) {
       window.scrollBy(3, 0);
     }
     if ((Number(sub.style.left.slice(0,-2)) - window.pageXOffset) < 500) {
@@ -687,23 +701,27 @@ function scroll() {
   }
 }
 
+// booleans to check checkpoint
+
 function currentCheckpoint() {
-  if (Number(sub.style.left.slice(0,-2)) < window.innerWidth * 4.5) {
+  if (Number(sub.style.left.slice(0,-2)) < screen.width * 4.5) {
     checkpoint.one = true;
     checkpoint.two = false;
     checkpoint.three = false;
   }
-  if (Number(sub.style.left.slice(0,-2)) > window.innerWidth * 4.5 && Number(sub.style.left.slice(0,-2)) < window.innerWidth * 6 ) {
+  if (Number(sub.style.left.slice(0,-2)) > screen.width * 4.5 && Number(sub.style.left.slice(0,-2)) < screen.width * 6 ) {
     checkpoint.one = false;
     checkpoint.two = true;
     checkpoint.three = false;
   }
-  if (Number(sub.style.left.slice(0,-2)) > window.innerWidth * 7 + 100) {
+  if (Number(sub.style.left.slice(0,-2)) > screen.width * 7 + 100) {
     checkpoint.one = false;
     checkpoint.two = false;
     checkpoint.three = true;
   }
 }
+
+// mine collision..
 
 function mineCollision() {
   if (mines.length > 0) {
@@ -720,6 +738,8 @@ function mineCollision() {
     }
   }
 }
+
+// shooting mines with torpedos
 
 function mineShoot() {
   // torpedo firedRight shoots mine
@@ -752,6 +772,8 @@ function mineShoot() {
   }
 }
 
+// if (dead == true)
+
 function death() {
   if (dead) {
     vector.up = false;
@@ -762,12 +784,16 @@ function death() {
   }
 }
 
+// calls for respawn and changes boolean (to avoid overlapping respawns)
+
 function respawnCheck() {
   if (needRespawn) {
     setTimeout( () => respawn(), 1000 )
     needRespawn = false;
   }
 }
+
+// runs respawn sequence
 
 function respawn() {
   dead = false;
@@ -778,15 +804,17 @@ function respawn() {
   sub.style.bottom = '50px';
 }
 
+// gets respawn position dependent on current checkpoint
+
 function respawnPoint() {
   if (checkpoint.one) {
-    return (window.innerWidth * 3 + 100).toString() + 'px'
+    return (screen.width * 3 + 100).toString() + 'px'
   } else if (checkpoint.two) {
-    return (window.innerWidth * 4.70).toString() + 'px'
+    return (screen.width * 4.70).toString() + 'px'
   }
 }
 
-// current set to event listener 'x'
+// spawn hostile missles
 
 function hostileSpawn() {
   if (hostilesActive) {
@@ -798,11 +826,11 @@ function hostileSpawn() {
           hostile.src = "http://images.clipartpanda.com/missile-clipart-missile.png";
           hostile.style.width = '60px';
           hostile.style.position = 'absolute';
-          var generalAngle = Math.atan((2 * window.innerHeight) / window.innerWidth);
+          var generalAngle = Math.atan((2 * window.innerHeight) / screen.width);
           var hostileAngle = (Math.random()* generalAngle) + (Math.PI * 1.5 - generalAngle);
           hostile.id = hostileAngle.toString().slice(0,4);
           hostile.style.transform = 'rotate(' + hostileAngle.toString() + 'rad)';
-          hostile.style.left = (window.innerWidth * 5 + Math.random() * window.innerWidth * 0.5 - 70).toString() + 'px';
+          hostile.style.left = (screen.width * 5 + Math.random() * screen.width * 0.5 - 70).toString() + 'px';
           hostile.style.bottom = (window.innerHeight - 50).toString() + 'px';
           document.body.appendChild(hostile);
           hostiles.push(hostile);
@@ -815,11 +843,11 @@ function hostileSpawn() {
           hostile.src = "http://images.clipartpanda.com/missile-clipart-missile.png";
           hostile.style.width = '60px';
           hostile.style.position = 'absolute';
-          var generalAngle = Math.atan((2 * window.innerHeight) / window.innerWidth);
+          var generalAngle = Math.atan((2 * window.innerHeight) / screen.width);
           var hostileAngle = (Math.random()* generalAngle) + Math.PI * 1.5;
           hostile.id = hostileAngle.toString().slice(0,4);
           hostile.style.transform = 'rotate(' + hostileAngle.toString() + 'rad)';
-          hostile.style.left = (window.innerWidth * 5.5 + Math.random() * window.innerWidth * 0.5 - 70).toString() + 'px';
+          hostile.style.left = (screen.width * 5.5 + Math.random() * screen.width * 0.5 - 70).toString() + 'px';
           hostile.style.bottom = (window.innerHeight - 50).toString() + 'px';
           document.body.appendChild(hostile);
           hostiles.push(hostile);
@@ -832,11 +860,11 @@ function hostileSpawn() {
           hostile.src = "http://images.clipartpanda.com/missile-clipart-missile.png";
           hostile.style.width = '60px';
           hostile.style.position = 'absolute';
-          var generalAngle = Math.atan((2 * window.innerHeight) / window.innerWidth);
+          var generalAngle = Math.atan((2 * window.innerHeight) / screen.width);
           var hostileAngle = (Math.random()* generalAngle) + Math.PI * 0.5;
           hostile.id = hostileAngle.toString().slice(0,4);
           hostile.style.transform = 'rotate(' + hostileAngle.toString() + 'rad)';
-          hostile.style.left = (window.innerWidth * 5 + Math.random() * window.innerWidth * 0.5 - 70).toString() + 'px';
+          hostile.style.left = (screen.width * 5 + Math.random() * screen.width * 0.5 - 70).toString() + 'px';
           hostile.style.bottom = '-50px';
           document.body.appendChild(hostile);
           hostiles.push(hostile);
@@ -849,11 +877,11 @@ function hostileSpawn() {
           hostile.src = "http://images.clipartpanda.com/missile-clipart-missile.png";
           hostile.style.width = '60px';
           hostile.style.position = 'absolute';
-          var generalAngle = Math.atan((2 * window.innerHeight) / window.innerWidth);
+          var generalAngle = Math.atan((2 * window.innerHeight) / screen.width);
           var hostileAngle = (Math.random()* generalAngle) + (0.5 * Math.PI - generalAngle);
           hostile.id = hostileAngle.toString().slice(0,4);
           hostile.style.transform = 'rotate(' + hostileAngle.toString() + 'rad)';
-          hostile.style.left = (window.innerWidth * 5.5 + Math.random() * window.innerWidth * 0.5 - 70).toString() + 'px';
+          hostile.style.left = (screen.width * 5.5 + Math.random() * screen.width * 0.5 - 70).toString() + 'px';
           hostile.style.bottom = '-50px';
           document.body.appendChild(hostile);
           hostiles.push(hostile);
@@ -866,6 +894,7 @@ function hostileSpawn() {
   }
 }
 
+// moves hositles missles (dependent on angle)
 
 function hostileMove() {
   if(hostiles.length > 0) {
@@ -875,6 +904,8 @@ function hostileMove() {
     }
   }
 }
+
+// death if hit by hostile missle
 
 function hostileHit() {
   if(hostiles.length > 0) {
@@ -889,6 +920,8 @@ function hostileHit() {
   }
 }
 
+// end game sequence when reached checkpoint three
+
 function endGame() {
   if (checkpoint.three) {
     document.removeEventListener('keydown', onDown)
@@ -896,31 +929,33 @@ function endGame() {
     facing.right  = true;
     turbo = false;
     vector.right = true;
-    if (Number(sub.style.left.slice(0,-2)) > window.innerWidth * 7 ) {
+    if (Number(sub.style.left.slice(0,-2)) > screen.width * 7 + 300) {
       vector.right = false;
     }
     vector.down = true;
     if (Number(sub.style.bottom.slice(0,-2)) < 0) {
       vector.down = false;
     }
-    if (window.pageXOffset < window.innerWidth * 7 + 80) {
+    if (window.pageXOffset < screen.width * 7 + 70) {
       window.scrollBy(3,0);
     }
     setTimeout( () => reveal(), 2500);
   }
 }
 
+// reveals the end comments
+
 function reveal() {
   end = document.getElementById('end');
   end.style.visibility = 'visible';
 }
 
-// }
-
 
 
 // Five
-// These our functions called on interval
+// These the functions called on interval
+
+// the bulk of the program
 
 function update() {
   subMove();
@@ -937,6 +972,8 @@ function update() {
   endGame();
 }
 
+// removes destroyed mines
+
 function sweep() {
   var removables = document.getElementsByClassName('destroyed')
   if (removables.length > 0) {
@@ -949,35 +986,16 @@ function sweep() {
 
 
 // Six
-// These are our intervals
+// These are the intervals
 
 setInterval(update, 10);
 
-setInterval(sweep, 1000);
+setInterval(sweep, 800);
 
 
 
 // Seven
-// This is our code that is used only once
-
-function mineSpawn() {
-  while (mines.length < 30) {
-    var mine = document.createElement("IMG");
-    mine.setAttribute( "src", "http://www.clker.com/cliparts/c/e/7/c/1230571109126653456rg1024_cartoon_sea_mine.svg.med.png" );
-    mine.setAttribute( "style", "position:absolute;width:60px" );
-    mine.style.left = (((Math.random() * 0.4) + 3.5) * window.innerWidth).toString() + 'px';
-    mine.style.bottom = (((Math.random() * 0.8) + 0.1) * window.innerHeight).toString() + 'px';
-    document.body.appendChild(mine);
-    mines.push(mine);
-  }
-}
-
-mineSpawn();
-
-
-
-// Eight
-// Finanlly, our Event Listeners for the controls
+// Finanlly, Event Listeners for the controls
 
 const onDown = event => down(event.which)
 const onUp = event => up(event.which)
@@ -1006,6 +1024,7 @@ function down(keycode) {
         facing.left = false;
         // unflip submarine
     }
+    // turn on turbo
     if (keycode == 90) {
       turbo = true;
     }
@@ -1055,6 +1074,7 @@ function up(keycode) {
       }
     }
   }
+  // turn off turbo
   if (keycode == 90) {
     turbo = false;
   }
