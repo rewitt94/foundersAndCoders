@@ -196,17 +196,17 @@
 
 // Problems
   
-var yourWidth = screen.width - 10;
+var screenWidth = screen.width - 10;
   
 string = '';
 for (i = 0; i < 11; i++) {
-  string += yourWidth +'px ';
+  string += screenWidth +'px ';
 }
   
 var style = document.createElement("style");
 var collumn = '';
 for (i = 0; i < 11; i++) {
-  collumn += width +'px ';
+  collumn += screenWidth +'px ';
 }
 
 style.innerText = ".wrapper { grid-template-columns:" + collumn + " }"
